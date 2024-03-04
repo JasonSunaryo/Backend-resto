@@ -1,0 +1,96 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style2.css" />
+      <title>Fin & Flavours Table Book</title>
+    </head>
+    <body>
+
+      <div class="name-container">
+          <label for="reservation-name">Please input your reservation name : </label>
+          <input type="text" id="reservation-name" placeholder="Enter your name" />
+        </div>
+        
+      <div class="table-container">
+        <label> Select a table type :</label>
+        <select id="seat">
+          <option>VIP</option>
+          <option>Outdoor</option>
+          <option>Indoor</option>
+          <option>Classic</option>
+        </select>
+      </div>
+
+
+      <ul class="showcase">
+        <li>
+          <div class="table"></div>
+          <small>Available</small>
+        </li>
+        <li>
+          <div class="table example"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="table sold"></div>
+          <small>Sold</small>
+        </li>
+      </ul>
+      <div class="container">
+        <div class="row">
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+        </div>
+        <div class="row">
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>     
+
+        </div>
+
+
+
+        <div class="row">
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table sold"></div>
+          <div class="table sold"></div>
+        </div>
+        <div class="row">
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+        </div>
+        <div class="row">
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+          <div class="table sold"></div>
+        </div>
+        <div class="row">
+          <div class="table sold"></div>
+          <div class="table sold"></div>
+          <div class="table"></div>
+          <div class="table"></div>
+        </div>
+      </div>
+
+      <p class="text">
+              Thank you for your reservation on table <span id="count">0</span> table. See you,<span
+          id="Nama"
+          ></span
+        ></p>
+          <br>
+          <button class="my-button" onclick="showAlert()">Book Table</button>
+          <a href="gig.html" class="back">Back</a>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
