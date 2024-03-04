@@ -106,6 +106,7 @@ margin-top: 50px;
 }
 
 .fishAndChip img {
+    max-width: 100%;
     width: 1600px;
     height: 700px;
     filter: brightness(0.7);
@@ -357,4 +358,67 @@ footer .credit a {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+.kotakmetode {
+  background: rgba(255, 255, 255, 0.4);
+  display: none;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.kotakmetode .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.kotakmetode > div {
+  background-color: #bcbcbc;
+  box-shadow: 10px 10px 60px #000000;
+  display: inline-block;
+  height: 10rem;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 15rem;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px 5%;
+}
+.popupCloseButton {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.popupCloseButton:hover {
+  background-color: #ccc;
+}
+
+.caption:hover {
+  background-color: rgb(255, 200, 0);
+}
+
+.jumlah {
+  font-size: 20px;
+}
+
+.input {
+  width: 100px;
+  height: 20px;
 }
