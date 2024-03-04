@@ -28,7 +28,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body ng-app="myApp">
     <header>
       <div class="appbar">
         <div class="logo">Fin & Flavors</div>
@@ -88,6 +88,18 @@
       </div>
     </div>
  
+    <div class="kotakmetode">
+      <span class="helper"></span>
+      <div>
+        <div class="popupCloseButton">×</div>
+        <p class="jumlah">How many would you like to purchase?</p>
+        <p>Amount: <input type="number" ng-model="inputnum" ng-init="Harga=50000; inputnum=1" min="0"></p>
+        <p>Total : Rp.{{ Harga * inputnum }}</p>
+      </div>
+    </div>
+    
+    
+
 
     <div class="bottom">
       
@@ -124,5 +136,13 @@
         <p>Contact : <a href=>08812346372</a></p>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="tes.js"></script>
   </body>
 </html>
